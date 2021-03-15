@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3371648057667241225}
   - component: {fileID: 2729632761149733458}
   - component: {fileID: 5596072671855507139}
+  - component: {fileID: 428718876589744615}
   - component: {fileID: -8763855821467002013}
   - component: {fileID: -8587744470394293150}
   - component: {fileID: -1060859953486144721}
@@ -78,6 +79,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &428718876589744615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3665052260840185528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f0400f04939124289ea7a45cf7628c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letter: a
+  points: 2
 --- !u!114 &-8763855821467002013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667c47c7f81913f459c7ae0da940111a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
+  goDownArea: {fileID: 0}
+  discardPile: {fileID: 0}
+  playerHandArea: {fileID: 0}
 --- !u!61 &-8587744470394293150
 BoxCollider2D:
   m_ObjectHideFlags: 0

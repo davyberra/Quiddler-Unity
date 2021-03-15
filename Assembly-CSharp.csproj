@@ -64,8 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Blink.cs" />
+    <Compile Include="Assets\Scripts\CardClass.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\DrawCards.cs" />
+    <Compile Include="Assets\Scripts\saveWord.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

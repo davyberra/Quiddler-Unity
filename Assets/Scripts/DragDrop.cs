@@ -8,6 +8,7 @@ public class DragDrop : MonoBehaviour
     public GameObject goDownArea;
     public GameObject discardPile;
     public GameObject playerHandArea;
+    public GameObject faceDownPile;
     private bool isDragging = false;
     private bool isOverDropZone = false;
     private GameObject dropZone;
@@ -19,6 +20,7 @@ public class DragDrop : MonoBehaviour
         Canvas = GameObject.Find("Main Canvas");
         goDownArea = GameObject.Find("goDownArea");
         discardPile = GameObject.Find("discardPile");
+        faceDownPile = GameObject.Find("faceDownPile");
         playerHandArea = GameObject.Find("playerHandArea");
     }
 
@@ -60,10 +62,21 @@ public class DragDrop : MonoBehaviour
         isDragging = false;
         if (isOverDropZone)
         {
-            transform.SetParent(dropZone.transform, false);
-            if (dropZone == discardPile)
+            if (dropZone == goDownArea | dropZone == playerHandArea) 
             {
+                transform.SetParent(dropZone.transform, false);
+                
+            }
+            
+            else if (dropZone == discardPile)
+            {
+                transform.SetParent(dropZone.transform, true);
                 transform.position = dropZone.transform.position;
+            }
+            else
+            {
+                transform.position = startPosition;
+                transform.SetParent(startParent.transform, true);
             }
         }
         else

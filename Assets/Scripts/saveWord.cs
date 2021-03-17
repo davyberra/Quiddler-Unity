@@ -53,10 +53,10 @@ public class saveWord : MonoBehaviour
             totalCards++;
         }
 
-        if (totalCards > 1)
-        {
-            Blink.StartBlinking();
-        }
+        //if (totalCards > 1)
+        //{
+        //    Blink.StartBlinking();
+        //}
     }
 
 }

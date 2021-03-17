@@ -64,8 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Blink.cs" />
     <Compile Include="Assets\Scripts\CardClass.cs" />
+    <Compile Include="Assets\Scripts\CardList.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\DrawCards.cs" />
     <Compile Include="Assets\Scripts\saveWord.cs" />
